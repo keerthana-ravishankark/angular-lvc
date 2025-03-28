@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { ChildComponent } from './child/child.component';
+import { FooterComponent } from './footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -7,5 +9,8 @@ import { Component } from '@angular/core';
   styleUrl: './app.component.css'
 })
 export class AppComponent {
-  title = 'my-angular-spa';
+  title = 'Angular Live Virtual Class';
+  message: string = "I am Parent";
+  childmessage: string = "I am passed from Parent to child component"
+  developerName:string ="Keerthana Ravishankar"
 }
